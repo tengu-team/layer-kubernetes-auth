@@ -1,0 +1,16 @@
+name: kubernetes-auth
+summary: Provides access to a Kubernetes cluster
+maintainer: Sander Borny <sander.borny@ugent.be>
+description: |
+  Provides access to a Kubernetes cluster
+tags:
+  - misc
+provides:
+  kube-auth:
+    interface: kubernetes-auth
+requires:
+  kube-host:
+    interface: http
+    scope: container
+subordinate: true
+series: ['xenial']
